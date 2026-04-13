@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #334155;
+    background-color: #f8fafc; /* Soft modern background */
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.controls {
+    background: #ffffff;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.controls label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #0f172a;
+}
+
+.controls input {
+    padding: 12px 16px;
+    width: 280px;
+    font-size: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+}
+
+.controls input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.controls button {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.1s;
+    font-family: 'Inter', sans-serif;
+}
+
+.controls button:hover {
+    background-color: #2563eb;
+}
+
+.controls button:active {
+    transform: translateY(2px);
+}
+
+.error {
+    color: #ef4444;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.result-area {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+.result-area h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.result-area p {
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 500;
+    color: #475569;
+}
+
+#input-display {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Make SVG stand out nicely over the white card */
+svg {
+    border: 1px solid #000;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+#svg-container-both, #svg-container-water {
+    margin-bottom: 40px;
+    overflow-x: auto; /* Scroller if array is huge */
+    padding-bottom: 10px;
+}

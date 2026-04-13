@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank Problem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <label>Input Block Heights Array:</label>
+            <input type="text" id="array-input" value="0,4,0,0,0,6,0,6,4,0" placeholder="e.g. 0,4,0,0,0,6,0,6,4,0">
+            <button id="compute-btn">Compute</button>
+            <span id="error-msg" class="error"></span>
+        </div>
+
+        <div class="result-area">
+            <h3>Example</h3>
+            <p>Input: [<span id="input-display"></span>]</p>
+            <div id="svg-container-both"></div>
+            <p style="margin-top:20px;">Output: <span id="units-output" class="highlight"></span> Units</p>
+            <div id="svg-container-water"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
